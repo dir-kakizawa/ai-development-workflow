@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 type Status = "pending" | "running" | "completed";
 type Priority = "low" | "medium" | "high";
@@ -179,9 +180,17 @@ export default function Home() {
       <div className="max-w-5xl mx-auto p-6">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">
-            Task Manager
-          </h1>
+          <div className="flex items-center justify-between mb-4">
+            <h1 className="text-4xl font-bold text-slate-900">
+              Task Manager
+            </h1>
+            <Link
+              href="/household"
+              className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm font-medium"
+            >
+              家計簿アプリへ →
+            </Link>
+          </div>
           <p className="text-slate-600">
             Organize your tasks and boost productivity
           </p>
