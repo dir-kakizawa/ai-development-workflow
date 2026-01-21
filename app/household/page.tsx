@@ -95,15 +95,15 @@ export default function HouseholdPage() {
                 <Link href="/household" className="text-sm font-medium text-green-400">
                   概要
                 </Link>
-                <button className="text-sm font-medium text-slate-400 hover:text-white transition-colors">
+                <Link href="/household/budget" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">
                   予算
-                </button>
-                <button className="text-sm font-medium text-slate-400 hover:text-white transition-colors">
+                </Link>
+                <Link href="/household/report" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">
                   レポート
-                </button>
-                <button className="text-sm font-medium text-slate-400 hover:text-white transition-colors">
+                </Link>
+                <Link href="/household/settings" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">
                   設定
-                </button>
+                </Link>
               </nav>
             </div>
             <div className="flex items-center gap-4">
